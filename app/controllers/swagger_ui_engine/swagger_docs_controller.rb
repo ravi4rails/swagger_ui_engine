@@ -19,7 +19,7 @@ module SwaggerUiEngine
 
     def show
       @single_doc_url = single_doc_url? || single_doc_url_hash?
-      @swagger_url = @swagger_url[params[:id].to_sym] unless single_doc_url?
+      @swagger_url = @swagger_url[params[:id]] unless single_doc_url?
     end
 
     def single_doc
